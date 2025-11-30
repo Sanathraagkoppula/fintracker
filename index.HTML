@@ -560,7 +560,7 @@
             date: dateString
         };
 
-fetch("https://fintracker-mb74.onrender.com/add-transaction", {
+fetch("https://fintracker-1-i96z.onrender.com/add-transaction", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(tx)
@@ -705,7 +705,7 @@ function loadDashboardData() {
     const month = currentMonth + 1;  // JS 0-based, SQL 1-based
     const year = currentYear;
 
-    fetch(`https://fintracker-mb74.onrender.com/transactions/month?month=${month}&year=${year}`)
+    fetch(`https://fintracker-1-i96z.onrender.com/transactions/month?month=${month}&year=${year}`)
         .then(res => res.json())
         .then(data => {
             updateDashboardWithData(data);
@@ -719,3 +719,4 @@ function loadDashboardData() {
 </body>
 
 </html>
+
